@@ -1,0 +1,50 @@
+.jumbotron {
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 0 -550px; */
+}
+
+@media only screen and (max-width: 1600px) {
+    .jumbotron {
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .jumbotron {
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .jumbotron {
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .jumbotron {
+        background-position: center center;
+    }
+}
+
+h2,
+.input-group {
+    line-height: 250px;
+}
+
+.btn-make-recipe {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* 
+.forn-control {
+    border: 4px solid white;
+}
+
+.searchBtn {
+    border: 1px solid white;
+    box-sizing: border-box;
+} */

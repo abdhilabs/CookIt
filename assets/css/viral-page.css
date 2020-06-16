@@ -1,0 +1,23 @@
+.title-viral-page h5 {
+    font-weight: 400;
+}
+
+.title-viral-page .active a {
+    color: #EB4A36;
+    text-decoration: none;
+}
+
+.figure-caption p {
+    color: #EB4A36;
+    font-size: 14px;
+}
+
+.figure-caption h5 {
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.time-cook {
+    font-size: 12px;
+    font-weight: 200;
+}
