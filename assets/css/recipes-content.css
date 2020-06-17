@@ -1,0 +1,20 @@
+.recipes-cc {
+    text-align: left;
+}
+
+.recipes h3 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.desc p {
+    color: #EB4A36 !important;
+}
+
+.recipes hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background: grey;
+    opacity: 0.5;
+}
