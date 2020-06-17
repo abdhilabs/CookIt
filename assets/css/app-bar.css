@@ -4,6 +4,12 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+li:active,
+li:hover,
+li:visited>a {
+    border-bottom: 1px solid #EB4A36;
+}
+
 .nav-item {
     margin-right: 20px;
 }

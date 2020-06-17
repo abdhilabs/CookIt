@@ -1,0 +1,16 @@
+.chef h3 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.desc p {
+    color: #EB4A36 !important;
+}
+
+.chef hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background: grey;
+    opacity: 0.5;
+}
