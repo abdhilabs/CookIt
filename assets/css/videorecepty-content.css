@@ -14,3 +14,81 @@
     background: grey;
     opacity: 0.5;
 }
+
+.figure-img {
+    position: relative;
+}
+
+.videorecipe-img a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 8px;
+    opacity: 0;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.videorecipe-img:hover a {
+    opacity: 1;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .recipes-cc {
+        padding-left: 1.8rem;
+    }
+
+    .time-cook p {
+        margin-right: 2rem;
+    }
+
+    .videorecipe-img a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-right: 25px;
+        margin-left: 25px;
+        bottom: 8px;
+        opacity: 0.5;
+        border-radius: 5px;
+        transition: opacity 0.3s;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .videorecipe-img:hover a {
+        opacity: 0.5;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .recipes-cc {
+        padding-left: 1.8rem;
+    }
+
+    .time-cook p {
+        margin-right: 2rem;
+    }
+
+    .videorecipe-img a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-right: 25px;
+        margin-left: 25px;
+        bottom: 8px;
+        opacity: 0.5;
+        border-radius: 5px;
+        transition: opacity 0.3s;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .videorecipe-img:hover a {
+        opacity: 0.5;
+    }
+}
