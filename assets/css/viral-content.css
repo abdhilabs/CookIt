@@ -1,3 +1,7 @@
+.virals {
+    color: #4a4a44;
+}
+
 .title-viral-page a h5 {
     font-weight: 400;
 }
@@ -20,6 +24,10 @@
 .title-viral-page a:hover {
     color: #EB4A36;
     text-decoration: none;
+}
+
+.viral-cc a h5 {
+    font-weight: 600;
 }
 
 /* Small devices (landscape phones, 576px and up) */
