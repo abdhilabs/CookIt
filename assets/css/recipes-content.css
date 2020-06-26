@@ -1,10 +1,15 @@
-.recipes-cc {
-    text-align: left;
-}
-
 .recipes h3 {
     font-size: 34px;
     font-weight: 600;
+}
+
+.recipes-cc {
+    text-align: left;
+    color: #4a4a4a;
+}
+
+.recipes-cc a h5 {
+    color: #4a4a44 !important;
 }
 
 .desc p {
@@ -17,4 +22,77 @@
     height: 1px;
     background: grey;
     opacity: 0.5;
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .recipes-cc {
+        padding-left: -1.8rem !important;
+        text-align: left !important;
+    }
+
+    .time-cook p {
+        padding-left: 3rem;
+        text-align: right !important;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .recipes-cc {
+        padding-left: 1.8rem;
+    }
+
+    .time-cook p {
+        margin-right: 2rem;
+    }
+
+
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .recipes-page-img a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 128px;
+        margin-right: 14px;
+        margin-left: 14px;
+        opacity: 0;
+        border-radius: 5px;
+        transition: opacity 0.3s;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .recipes-page-img a:hover {
+        opacity: 1;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .recipes-page-img a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 128px;
+        margin-right: 24px;
+        margin-left: 24px;
+        opacity: 0;
+        border-radius: 5px;
+        transition: opacity 0.3s;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .recipes-page-img a:hover {
+        opacity: 1;
+    }
 }
