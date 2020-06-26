@@ -26,13 +26,13 @@
         margin-bottom: -5px;
     }
 } */
-.nav-link {
+.nav-title-menu {
     text-decoration: none !important;
     color: #4A4A4A !important;
     align-items: center;
 }
 
-.nav-link:hover {
+.nav-title-menu:hover {
     color: #EB4A36 !important;
 }
 
