@@ -1,0 +1,42 @@
+.raw-list{
+    text-align: center;
+}
+.raw-list ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+.raw-list ul li a{
+    color: #999;
+}
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                        "kiri tengah kanan";
+    /* background-color: #eee; */
+}
+.header{
+    grid-area: header;
+    /* background-color: red; */
+}
+.kiri{
+    grid-area: kiri;
+    /* background-color: blue; */
+}
+.tengah{
+    grid-area: tengah;
+    /* background-color: salmon; */
+}
+.kanan{
+    grid-area: kanan;
+    /*  -color: green; */
+}
+.small-recipe{
+    font-size: 12px;
+    font-weight: lighter;
+    color: slategray;
+    margin-left: 5px;
+}

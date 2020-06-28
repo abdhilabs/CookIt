@@ -5,6 +5,7 @@
     /* background-position: 0 -550px; */
 }
 
+
 @media only screen and (max-width: 1600px) {
     .jumbotron {
         background-position: center center;
@@ -51,4 +52,34 @@ h2,
 .btn-make-recipe {
     font-weight: 600;
     font-size: 12px;
+}
+
+
+.jumbo-card-title {
+    font-size: 16px;
+    color: #EB4A36;
+    margin-top: -14px;
+}
+
+.jumbo-card-name {
+    font-size: 42px;
+    margin-top: -16px;
+    font-weight: 600;
+    color: #4a4a44;
+}
+
+.jumbo-card-desc {
+    font-size: 16px;
+}
+
+.jumbo-card-time {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4a4a44;
+}
+
+.jumbo-card-time-desc {
+    font-size: 12px;
+    margin-top: -10px;
+    color: #4a4a44;
 }
