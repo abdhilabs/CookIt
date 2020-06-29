@@ -10,8 +10,7 @@
   left: 0;
   height: 600px;
   overflow-x: hidden;
-  /* position: sticky; */
-  z-index: 1;   
+  z-index: 1;  
 }
 .sidebar, ul, li, a{
   text-decoration: none;
@@ -55,7 +54,7 @@ ul {
 }
 
 .content{
-  margin-top: 50px;
+  margin-top: 0px;
   margin-left: 250px;
 }
 
@@ -64,11 +63,18 @@ ul {
   height: 25px;
   margin-right: 5px
 }
+
+.open-sidebar, .close-sidebar{
+  display: none;
+}
 /* Media query
 // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
   .sidebar{
-    display:none;
+    width: 0px;
+  }
+  .open-sidebar, .close-sidebar{
+    display: block;
   }
   .content{
     margin-left: 0;
@@ -78,7 +84,10 @@ ul {
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
   .sidebar{
-    display: none;
+    width: 0px;
+  }
+  .open-sidebar, .close-sidebar{
+    display: block;
   }
   .content{
     margin-left: 0;
@@ -88,7 +97,10 @@ ul {
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
   .sidebar{
-    display: none;
+    width: 0px;
+  }
+  .open-sidebar, .close-sidebar{
+    display: block;
   }
   .content{
     margin-left: 0;
@@ -96,42 +108,3 @@ ul {
  }
 
 /* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
-  
- }
-
-
-/* .container-dash{
-  margin-top: 70px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "side main"
-                      "footer footer";
-  column-gap: 20px;
-  background-color: black;
-}
-
-aside{
-  grid-area: side;
-  background-color: #ddd;
-  padding: 0px 0 0 10px;
-}
-.sidebar, ul, li, a{
-  text-decoration: none;
-  color: #333;
-  margin-top: 10px ;
-}
-ul {
-  list-style: none;
-}
-
-main{
-  grid-area: main;
-  background-color: lightblue;
-}
-footer{
-  grid-area: footer;
-  background-color: #333;
-} */

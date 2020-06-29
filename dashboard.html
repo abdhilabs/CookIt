@@ -13,7 +13,25 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
     <link rel="stylesheet" href="assets/css/dashboard.css">
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.open-sidebar').click(function(){
+                $('.sidebar').animate({ 
+                    width:"250px"
+                });
+            });
+            $('.close-sidebar').click(function(){
+                $('.sidebar').animate({
+                    width:"0px"
+                });
+            });
+            
+        });
+    </script>
+
     <title>CookIt</title>
 </head>
 <body>
@@ -52,8 +70,8 @@
 
   <aside>
     <div class="container-fluid posisi">
-      
         <div class="sidebar" id="sidebar">
+            <button class="close-sidebar" style="background: transparent; border: none; float: right; margin-right: 20px;"><img src="assets/img/close.png" alt="" style="width: 10px; height: 10px;"></button>
           <div class="profile">
             <div class="profile-img">
               <img src="assets/img/Group 14.png" alt="">
@@ -86,8 +104,9 @@
         </div>
 
         <!-- CONTENT -->
+        <button class="open-sidebar"  style="border: none; background-color: #eee; margin-left: -15px; height: 60px;"><img src="assets/img/next.png" alt=""></button>
         <div class="row content justify-content-center">
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4" style="text-align: center;">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4" style="text-align: center;"> 
             <img src="assets/img/junaedi.png" alt="" width="90%">
           </div>
           <div class="col-12 col-sm-12 col-lg-8 desc" style="margin-top: 40px;">
