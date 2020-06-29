@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.open-sidebar').click(function(){
+                $('.sidebar').animate({ 
+                    width:"250px"
+                });
+            });
+            $('.close-sidebar').click(function(){
+                $('.sidebar').animate({
+                    width:"0px"
+                });
+            });
+            
+        });
+    </script>
+
+    <title>CookIt</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/img/ic_logo-2x.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-uppercase mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videorecepty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Raw Materials</a>
+                    </li>
+                </ul>
+                <div class="nav-link">
+                    <img src="assets/img/ic_love.png" alt="">(2)</div>
+                <div class="nav-link">
+                    <img src="assets/img/ic_saved.png" alt="">(2)</div>
+                <div class="nav-link">
+                    <img src="assets/img/ic_profil.png" alt="">My Account</div>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <aside>
+    <div class="container-fluid posisi">
+        <div class="sidebar" id="sidebar">
+            <button class="close-sidebar" style="background: transparent; border: none; float: right; margin-right: 20px;"><img src="assets/img/close.png" alt="" style="width: 10px; height: 10px;"></button>
+          <div class="profile">
+            <div class="profile-img">
+              <img src="assets/img/Group 14.png" alt="">
+            </div>
+            <div class="profile-name">
+              Chef Virgil Abloh
+            </div>
+            <div class="profile-followers1">
+              8<br>
+              Followers
+            </div>
+            <div class="profile-followers2">
+              3<br>
+              Following
+            </div>
+            <div class="profile-followers3">
+              2001<br>
+              Recipe
+            </div>
+          </div>
+
+          <ul>
+            <li class="item"><a href="#">Dashboard</a></li>
+            <li class="item"><a href="#">Cooking Plan</a></li>
+            <li class="item"><a href="#">Make Recipes</a></li>
+            <li class="item"><a href="#">Cookmark</a></li>
+            <li class="item"><a href="#">Settings</a></li>
+            <li class="item"><a href="#">Sign Out</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <button class="open-sidebar"  style="border: none; background-color: #eee; margin-left: -15px; height: 60px;"><img src="assets/img/next.png" alt=""></button>
+        <div class="row content justify-content-center">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-4" style="text-align: center;"> 
+            <img src="assets/img/junaedi.png" alt="" width="90%">
+          </div>
+          <div class="col-12 col-sm-12 col-lg-8 desc" style="margin-top: 40px;">
+            <h4 id="test" style="font-weight: bold;">Holla, Chef Virgil Abloh</h4>
+            <p>It's beautifull day right ? I hope.... <br> Let's cook delicious food</p>
+            
+            <!-- curently cooking -->
+            <div class="row">
+              <div class="col-12">
+                <p style="color: black !important; font-weight: bold;">YOUR CURRENTLY COOKING</p>
+                <hr>
+              </div>
+              <div class="col col-lg-2">
+                <figure class="figure">
+                    <img src="./assets/img/hamburger-494706_1280.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 213px">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                            <p>12 minutes</p>
+                        </div>
+                    </div>
+                </figure>
+              </div>
+
+              <div class="col col-lg-2">
+                <figure class="figure">
+                    <img src="./assets/img/hamburger-494706_1280.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 213px">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                            <p>12 minutes</p>
+                        </div>
+                    </div>
+                </figure>
+              </div>
+
+              <div class="col col-lg-2">
+                <figure class="figure">
+                    <img src="./assets/img/hamburger-494706_1280.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 213px">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                            <p>12 minutes</p>
+                        </div>
+                    </div>
+                </figure>
+              </div>
+
+              <div class="col col-lg-2">
+                <figure class="figure">
+                    <img src="./assets/img/hamburger-494706_1280.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 213px">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                            <p>12 minutes</p>
+                        </div>
+                    </div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+         <!-- cooking plan -->
+         <div class="row content">
+            <div class="col-lg-12">
+                <p style="font-weight: bold;">Cooking Plan</p>
+                <hr>
+            </div>
+              
+              <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                <figure class="figure">
+                    <img src="./assets/img/hamburger-494706_1280.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width:90% max-content;">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                          <a href="#" id="btn-check"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                          <a href="#" id="btn-cancel"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                        </div>
+                    </div>
+                  </figure>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                <figure class="figure">
+                    <img src="./assets/img/hamburger-494706_1280.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width:90% max-content;">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                          <a href="#" id="btn-check"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                          <a href="#" id="btn-cancel"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                        </div>
+                    </div>
+                  </figure>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                <figure class="figure">
+                    <img src="./assets/img/hamburger-494706_1280.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 90% max-content;">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                          <a href="#" id="btn-check"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                          <a href="#" id="btn-cancel"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                        </div>
+                    </div>
+                  </figure>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                <figure class="figure">
+                    <img src="./assets/img/hamburger-494706_1280.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 90% max-content;">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                          <a href="#" id="btn-check"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                          <a href="#" id="btn-cancel"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                        </div>
+                    </div>
+                  </figure>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                <figure class="figure">
+                    <img src="./assets/img/hamburger-494706_1280.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 90% max-content;">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                          <a href="#" id="btn-check"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                          <a href="#" id="btn-cancel"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                        </div>
+                    </div>
+                  </figure>
+              </div>
+
+
+         </div>
+         
+         <!-- COOKMARK -->
+         <div class="row content">
+            <div class="col-lg-12">
+                <p style="font-weight: bold;">Cookmark</p>
+                <hr>
+            </div>
+              
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <figure class="figure">
+                    <img src="./assets/img/steak-826961_1920.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 110%">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                            <p>12 minutes</p>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <figure class="figure">
+                    <img src="./assets/img/steak-826961_1920.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 110%">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                            <p>12 minutes</p>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <figure class="figure">
+                    <img src="./assets/img/steak-826961_1920.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 110%">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                            <p>12 minutes</p>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+              <figure class="figure">
+                  <img src="./assets/img/steak-826961_1920.png" class="figure-img img-fluid z-depth-1"
+                      alt="..." style="width: 110%">
+                  <figcaption class="figure-caption recipes-cc">
+                      <p>Isac Kitchen</p>
+                      <h5>British Cake</h5>
+                  </figcaption>
+                  <div class="row size-desc">
+                      <div class="col justify-content-end d-flex time-cook">
+                          <p>12 minutes</p>
+                      </div>
+                  </div>
+              </figure>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <figure class="figure">
+                    <img src="./assets/img/steak-826961_1920.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 110%">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                            <p>12 minutes</p>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <figure class="figure">
+                    <img src="./assets/img/steak-826961_1920.png" class="figure-img img-fluid z-depth-1"
+                        alt="..." style="width: 110%">
+                    <figcaption class="figure-caption recipes-cc">
+                        <p>Isac Kitchen</p>
+                        <h5>British Cake</h5>
+                    </figcaption>
+                    <div class="row size-desc">
+                        <div class="col justify-content-end d-flex time-cook">
+                            <p>12 minutes</p>
+                        </div>
+                    </div>
+                </figure>
+            </div>  
+         </div>
+
+         <!-- Footer -->
+         <div class="row content">
+           <div class="col-12 ">
+            <footer class="footer border-top p-5 pt-5">
+              <div class="container">
+                  <div class="row justify-content-between">
+                      <div class="col-1">
+                          <a href="">
+                              <img src="./assets/img/ic_logo.png" alt="">
+                          </a>
+                      </div>
+                      <div class="col-10 text-right">
+                          <a href="">
+                              <img src="./assets/img/003-twitter.png" alt="">
+                          </a>
+                          <a href="">
+                              <img src="./assets/img/002-instagram.png" alt="">
+                          </a>
+                          <a href="">
+                              <img src="./assets/img/001-facebook (2).png" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  <div class="row mt-3 justify-content-between">
+                      <div class="col-5">
+                          <p>All right reserved by <span>Cookit.com</span> 2020</p>
+                      </div>
+                      <div class="col-6 ">
+                          <nav class="nav justify-content-end text-uppercase">
+                              <a class="nav-link active" href="#">Jobs</a>
+                              <a class="nav-link" href="#">developer</a>
+                              <a class="nav-link" href="#">Terms</a>
+                              <a class="nav-link pr-0" href="#">Privacy Policy</a>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+            </footer>
+           </div>
+         </div>
+</body>
+</html>
