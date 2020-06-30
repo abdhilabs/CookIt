@@ -39,6 +39,10 @@
     opacity: 1;
 }
 
+.viral-page-img {
+    background-size: cover !important;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .recipes-cc {
