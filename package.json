@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -39,8 +40,10 @@
     "favicon": "0.0.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
+    "node-static": "^0.7.11",
     "popper.js": "^1.16.1",
     "regenerator-runtime": "^0.13.5",
     "unirest": "^0.6.0"
-  }
+  },
+  "keywords": []
 }
