@@ -14,6 +14,11 @@
 
     <link rel="stylesheet" href="assets/css/dashboard.css">
     
+    <!-- script untuk modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
     <title>CookIt</title>
 </head>
 <body>
@@ -79,8 +84,8 @@
             <li class="item"><a href="#">Cooking Plan</a></li>
             <li class="item"><a href="#">Make Recipes</a></li>
             <li class="item"><a href="#">Cookmark</a></li>
-            <li class="item"><a href="#">Settings</a></li>
-            <li class="item"><a href="#">Sign Out</a></li>
+            <li class="item"><a href="settings-page.html">Settings</a></li>
+            <li class="item"><a href="#" data-toggle="modal" data-target="#myModal">Sign Out</a></li>
           </ul>
         </div>
 
@@ -405,5 +410,33 @@
             </footer>
            </div>
          </div>
+         
+         <!-- MODALS SIGNOUT -->
+         <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">SIGNOUT</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Do you want to SignOut ?
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="login-page.html"><button type="button" class="btn btn-danger">Yes</button></a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </aside>
 </body>
 </html>

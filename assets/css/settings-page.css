@@ -1,0 +1,32 @@
+h1{
+    margin: 0 0 15px 0;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+ }
+ .more{
+    display: none;
+ }
+ .read{
+    cursor: pointer;
+ }
+ .read img{
+    width: 25px;
+    height: 25px;
+ }
+ .rotate{
+   -webkit-transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   -o-transform: rotate(180deg);
+   transform: rotate(180deg);
+ }
+ /* .card ul li{
+    height: 45px;
+ } */
+ /* .tambah{
+    height: auto;
+ } */ 
