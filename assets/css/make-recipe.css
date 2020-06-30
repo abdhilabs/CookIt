@@ -20,9 +20,8 @@ input::placeholder, .placeholder{
     border: none;
   }
   .btn-saverecipe{
-    border-radius: 20px;
-    width: 120px;
-    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
     float: right;
     border: none;
     background-color: rgb(185, 57, 43);
