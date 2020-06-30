@@ -1,4 +1,4 @@
-const apikey = '35b581884b27467780d813946d34cfc7';
+const apikey = '812e6cf081e840de876997fc8260d956';
 
 function getRecipe() {
     fetch('https://api.spoonacular.com/recipes/random?number=12&apiKey=' + apikey, {
@@ -79,7 +79,7 @@ function showWidgetRecipePage(data) {
     <div class="col-md-6">
         <div class="card-body">
             <a href="#">
-                <p class="widget-title">Isac Kitchen</p>
+                <p class="widget-title">${data.recipes[i].servings} person</p>
             </a>
             <a href="#">
                 <p class="widget-name">${data.recipes[i].title}</p>

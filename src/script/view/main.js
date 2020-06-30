@@ -120,14 +120,14 @@ function showVideos(data) {
         </a>
     </figure>
     <figcaption class="figure-caption recipes-cc">
-        <p>${data.videos[i].rating}</p>
+        <p>${data.videos[i].views} views</p>
         <a href="#">
             <h5>${data.videos[i].shortTitle}</h5>
         </a>
     </figcaption>
     <div class="row size-desc">
         <div class="col justify-content-end d-flex time-cook">
-            <p>12 minutes</p>
+            <p></p>
         </div>
     </div>
 </div>`;
@@ -135,7 +135,7 @@ function showVideos(data) {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // getViral();
-    // getVideo();
-    // getRecipes();
+    getViral();
+    getVideo();
+    getRecipes();
 });

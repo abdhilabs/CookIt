@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
         this.innerHTML = `<div class="container">
         <div class="row justify-content-between">
             <div class="col-1">
-                <a href="">
+                <a href="index.html">
                     <img src="./src/img/ic_logo.png" alt="">
                 </a>
             </div>

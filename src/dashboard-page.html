@@ -4,15 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="assets/css/main.css">
-
-    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="/src/styles/main.css">
     
     <!-- script untuk modal -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,46 +17,17 @@
 </head>
 <body>
   <header>
-      <section id="dashboard"></section>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top my-auto">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/ic_logo-2x.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav text-uppercase mx-auto">
-                    <li class="nav-item active my-auto">
-                        <a class="nav-link nav-title-menu" href="recipe-page.html">Recipes</a>
-                    </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link nav-title-menu" href="videorecepty-page.html">Videorecepty</a>
-                    </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link nav-title-menu" href="raw-materials-page.html">Raw Materials</a>
-                    </li>
-                </ul>
-                <div class="my-auto text-uppercase">
-                    <a class="nav-link nav-title-menu" href="dashboard-page.html"><i class="fa fa-user-circle-o fa-lg mr-2"
-                            aria-hidden="true"></i>my
-                        account</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <app-bar></app-bar>
   </header>
 
   <aside>
     <div class="container-fluid posisi">
       
         <div class="sidebar" id="sidebar">
-            <button class="close-sidebar" style="background: transparent; border: none; float: right; margin-right: 20px;"><img src="assets/img/close.png" alt="" style="width: 10px; height: 10px;"></button>
+            <button class="close-sidebar" style="background: transparent; border: none; float: right; margin-right: 20px;"><img src="/src/img/close.png" alt="" style="width: 10px; height: 10px;"></button>
           <div class="profile">
             <div class="profile-img">
-              <img src="assets/img/ic_img_person_woman.png" alt="">
+              <img src="/src/img/ic_img_person_woman.png" alt="">
             </div>
             <div class="profile-name">
               Chef Virgil Abloh
@@ -91,10 +56,10 @@
         </div>
 
         <!-- CONTENT -->
-        <button class="open-sidebar"><img src="assets/img/next.png" alt=""></button>
+        <button class="open-sidebar"><img src="/src/img/next.png" alt=""></button>
         <div class="pt-5 row content justify-content-center">
           <div class="col-6 col-sm-6 col-md-6 mt-5 col-lg-4" style="text-align: center;">
-            <img src="assets/img/ill_chef.png" alt="" width="90%">
+            <img src="/src/img/ill_chef.png" alt="" width="90%">
           </div>
           <div class="col-12 col-sm-12 col-lg-8 desc" style="margin-top: 40px;">
             <h4 id="test" style="font-weight: bold;">Holla, Chef Virgil Abloh</h4>
@@ -109,7 +74,7 @@
               <div class="col-4 col-lg-2">
                 <figure class="figure">
                     <a href="detail-recipe-page.html">
-                        <img src="./assets/img/img_burger.png" class="figure-img img-fluid z-depth-1"
+                        <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1"
                         alt="..." style="width: 213px">
                     </a>
                     <figcaption class="figure-caption recipes-cc">
@@ -127,7 +92,7 @@
               <div class="col-4 col-lg-2">
                 <figure class="figure">
                     <a href="detail-recipe-page.html">
-                        <img src="./assets/img/img_burger.png" class="figure-img img-fluid z-depth-1"
+                        <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1"
                         alt="..." style="width: 213px">
                     </a>
                     <figcaption class="figure-caption recipes-cc">
@@ -145,7 +110,7 @@
               <div class="col-4 col-lg-2">
                 <figure class="figure">
                     <a href="detail-recipe-page.html">
-                        <img src="./assets/img/img_burger.png" class="figure-img img-fluid z-depth-1"
+                        <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1"
                         alt="..." style="width: 213px">
                     </a>
                     <figcaption class="figure-caption recipes-cc">
@@ -163,7 +128,7 @@
               <div class="col-4 col-lg-2">
                 <figure class="figure">
                     <a href="detail-recipe-page.html">
-                        <img src="./assets/img/img_burger.png" class="figure-img img-fluid z-depth-1"
+                        <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1"
                         alt="..." style="width: 213px">
                     </a>
                     <figcaption class="figure-caption recipes-cc">
@@ -192,7 +157,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="figure">
                         <a href="detail-recipe-page.html">
-                            <img src="./assets/img/img_steak.png" class="figure-img img-fluid z-depth-1"
+                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
                             alt="..." style="width: 110%">
                         </a>
                         <figcaption class="figure-caption recipes-cc">
@@ -201,8 +166,8 @@
                         </figcaption>
                         <div class="row size-desc">
                             <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
                               </div>
                         </div>
                     </figure>
@@ -211,7 +176,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="figure">
                         <a href="detail-recipe-page.html">
-                            <img src="./assets/img/img_steak.png" class="figure-img img-fluid z-depth-1"
+                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
                             alt="..." style="width: 110%">
                         </a>
                         <figcaption class="figure-caption recipes-cc">
@@ -220,8 +185,8 @@
                         </figcaption>
                         <div class="row size-desc">
                             <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
                               </div>
                         </div>
                     </figure>
@@ -230,7 +195,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="figure">
                         <a href="detail-recipe-page.html">
-                            <img src="./assets/img/img_steak.png" class="figure-img img-fluid z-depth-1"
+                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
                             alt="..." style="width: 110%">
                         </a>
                         <figcaption class="figure-caption recipes-cc">
@@ -239,8 +204,8 @@
                         </figcaption>
                         <div class="row size-desc">
                             <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
                               </div>
                         </div>
                     </figure>
@@ -249,7 +214,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="figure">
                         <a href="detail-recipe-page.html">
-                            <img src="./assets/img/img_steak.png" class="figure-img img-fluid z-depth-1"
+                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
                             alt="..." style="width: 110%">
                         </a>
                         <figcaption class="figure-caption recipes-cc">
@@ -258,8 +223,8 @@
                         </figcaption>
                         <div class="row size-desc">
                             <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
                               </div>
                         </div>
                     </figure>
@@ -268,7 +233,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="figure">
                         <a href="detail-recipe-page.html">
-                            <img src="./assets/img/img_steak.png" class="figure-img img-fluid z-depth-1"
+                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
                             alt="..." style="width: 110%">
                         </a>
                         <figcaption class="figure-caption recipes-cc">
@@ -277,8 +242,8 @@
                         </figcaption>
                         <div class="row size-desc">
                             <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
                               </div>
                         </div>
                     </figure>
@@ -287,7 +252,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="figure">
                         <a href="detail-recipe-page.html">
-                            <img src="./assets/img/img_steak.png" class="figure-img img-fluid z-depth-1"
+                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
                             alt="..." style="width: 110%">
                         </a>
                         <figcaption class="figure-caption recipes-cc">
@@ -296,8 +261,8 @@
                         </figcaption>
                         <div class="row size-desc">
                             <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="assets/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="assets/img/cancel.png" alt="" class="btn-cookplan" ></a>
+                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
+                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
                               </div>
                         </div>
                     </figure>
@@ -309,41 +274,9 @@
          <!-- Footer -->
          <div class="row content">
            <div class="col-12 ">
-            <footer class="footer border-top p-5 pt-5">
-              <div class="container">
-                  <div class="row justify-content-between">
-                      <div class="col-1">
-                          <a href="">
-                              <img src="./assets/img/ic_logo.png" alt="">
-                          </a>
-                      </div>
-                      <div class="col-10 text-right">
-                          <a href="">
-                              <img src="./assets/img/ic_twitter_black.png" alt="">
-                          </a>
-                          <a href="">
-                              <img src="./assets/img/ic_instagram_black.png" alt="">
-                          </a>
-                          <a href="">
-                              <img src="./assets/img/ic_facebook_black.png" alt="">
-                          </a>
-                      </div>
-                  </div>
-                  <div class="row mt-3 justify-content-between">
-                      <div class="col-5">
-                          <p>All right reserved by <span>Cookit.com</span> 2020</p>
-                      </div>
-                      <div class="col-6 ">
-                          <nav class="nav justify-content-end text-uppercase">
-                              <a class="nav-link active" href="#">Jobs</a>
-                              <a class="nav-link" href="#">developer</a>
-                              <a class="nav-link" href="#">Terms</a>
-                              <a class="nav-link pr-0" href="#">Privacy Policy</a>
-                          </nav>
-                      </div>
-                  </div>
-              </div>
-            </footer>
+                <footer class="footer border-top p-5 pt-5">
+                    <footer-bar></footer-bar>
+                </footer>
            </div>
          </div>
          
@@ -360,7 +293,7 @@
           
                 <!-- Modal body -->
                 <div class="modal-body" style="text-align: center;">
-                    <img src="assets/img/signout.jpeg" alt="" style="width: 100px; height: 100px; margin: auto;">
+                    <img src="/src/img/signout.jpeg" alt="" style="width: 100px; height: 100px; margin: auto;">
                     <br>
                     <h4>Do you want to SignOut ?</h4>
                 </div>
@@ -426,7 +359,5 @@
 
         </div>
     </aside>
-
-    <script src="assets/js/dashboard.js"></script>
 </body>
 </html>

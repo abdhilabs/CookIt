@@ -6,12 +6,16 @@
 @import "videorecepty-content.css";
 @import "side-bar.css";
 @import "widget-recipe-page.css";
-<<<<<<< HEAD:assets/css/main.css
 @import "play-button-videoRecipe.css";
-=======
-@import "register.css";
->>>>>>> origin/eksperimen:src/styles/main.css
 @import "footer.css";
+@import "dashboard.css";
+@import "login.css";
+@import "make-recipe.css";
+@import "raw-materials.css";
+@import "register.css";
+@import "settings-page.css";
+@import "side-bar.css";
+@import "signup.css";
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700&display=swap');
 
 html {

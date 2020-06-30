@@ -26,7 +26,7 @@ class AppBar extends HTMLElement {
                     </li>
                 </ul>
                 <div class="my-auto text-uppercase">
-                    <a class="nav-link nav-title-menu" href="dasboard-page.html"><i class="fa fa-user-circle-o fa-lg mr-2"
+                    <a class="nav-link nav-title-menu" href="dashboard-page.html"><i class="fa fa-user-circle-o fa-lg mr-2"
                             aria-hidden="true"></i>my
                         account</a>
                 </div>

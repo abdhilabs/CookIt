@@ -3,50 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="assets/css/main.css">
-
-    <link rel="stylesheet" href="assets/css/make-recipe.css">
-    
+<!-- favicon -->
+<link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles/main.css">
 
     <title>CookIt</title>
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top my-auto">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/ic_logo-2x.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav text-uppercase mx-auto">
-                    <li class="nav-item active my-auto">
-                        <a class="nav-link nav-title-menu" href="recipe-page.html">Recipes</a>
-                    </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link nav-title-menu" href="videorecepty-page.html">Videorecepty</a>
-                    </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link nav-title-menu" href="raw-materials-page.html">Raw Materials</a>
-                    </li>
-                </ul>
-                <div class="my-auto text-uppercase">
-                    <a class="nav-link nav-title-menu" href="dashboard-page.html"><i class="fa fa-user-circle-o fa-lg mr-2"
-                            aria-hidden="true"></i>my
-                        account</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+      <app-bar></app-bar>
     </header>
     <main>
       <div class="wrapper-form">
@@ -54,7 +21,7 @@
           <div class="col-lg-12">
             <div class="img" style=" background-color: #eee; height: 400px; text-align: center;">
               <a href="">
-              <img src="assets/img/photo-camera.png" alt="" style="margin-top: 100px;">
+              <img src="/src/img/photo-camera.png" alt="" style="margin-top: 100px;">
               <p style="font-weight: bold;">Tap to insert photos</p>
               </a>
             </div>
@@ -72,12 +39,12 @@
             <span class="placeholder">STEPS</span>
             <div class="steps-img" style="width: 70%; margin: auto; height: 150px; background-color: #eee; text-align: center;">
               <a href="#">
-                <img src="assets/img/photo-camera.png" alt="" style="width: 60px; margin-top: 20px;">
+                <img src="/src/img/photo-camera.png" alt="" style="width: 60px; margin-top: 20px;">
                 <p style="font-weight: bold;">Tap to insert photos</p>
               </a>
             </div>
             <input type="text" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
-            <button class="btn-tambah btn-style"><img src="assets/img/plus.png" alt=""></button><button class="btn-kurang btn-style"><img src="assets/img/minus.png" alt=""></button>
+            <button class="btn-tambah btn-style"><img src="/src/img/plus.png" alt=""></button><button class="btn-kurang btn-style"><img src="/src/img/minus.png" alt=""></button>
           </div>
           <div class="col-lg-12" style="margin-top: 20px;">
             <span class="placeholder">What kind of this menu :</span> <br>
@@ -110,7 +77,6 @@
     </main>
 
     <!-- js -->
-    <script src="assets/js/jquery-3.1.0.min.js"></script>
-    <script src="assets/js/make-recipe.js"></script>
+    <script src="/src/script/jquery-3.1.0.min.js"></script>
 </body>
 </html>

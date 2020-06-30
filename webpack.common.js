@@ -58,8 +58,8 @@ module.exports = {
             template: 'src/register-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
-            filename: 'setting-page.html',
-            template: 'src/setting-page.html'
+            filename: 'settings-page.html',
+            template: 'src/settings-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'videorecepty-page.html',
