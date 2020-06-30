@@ -10,11 +10,7 @@
   left: 0;
   height: 600px;
   overflow-x: hidden;
-<<<<<<< HEAD:assets/css/dashboard.css
-  z-index: 1;  
-=======
   z-index: 1;
->>>>>>> origin/development:src/styles/dashboard.css
 }
 .sidebar, ul, li, a{
   text-decoration: none;
@@ -71,9 +67,6 @@ ul {
 
 .open-sidebar, .close-sidebar{
   display: none;
-<<<<<<< HEAD:assets/css/dashboard.css
-}
-=======
   border: none; 
   background: transparent; 
   margin-left: -37px; 
@@ -87,7 +80,6 @@ ul {
   background-color: #eee;
 }
 
->>>>>>> origin/development:src/styles/dashboard.css
 /* Media query
 // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
@@ -128,9 +120,6 @@ ul {
   }
  }
 
-<<<<<<< HEAD:assets/css/dashboard.css
-/* // Large devices (desktops, less than 1200px) */
-=======
 
 /* .container-dash{
   margin-top: 70px;
@@ -166,4 +155,3 @@ footer{
   grid-area: footer;
   background-color: #333;
 } */
->>>>>>> origin/development:src/styles/dashboard.css
