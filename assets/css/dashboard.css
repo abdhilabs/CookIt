@@ -10,8 +10,7 @@
   left: 0;
   height: 600px;
   overflow-x: hidden;
-  /* position: sticky; */
-  z-index: 1;   
+  z-index: 1;
 }
 .sidebar, ul, li, a{
   text-decoration: none;
@@ -55,20 +54,40 @@ ul {
 }
 
 .content{
-  margin-top: 50px;
+  margin-top: 0px;
   margin-left: 250px;
 }
 
 .btn-cookplan{
   width: 25px;
   height: 25px;
-  margin-right: 5px
+  margin-right: 5px;
+  cursor: pointer;
 }
+
+.open-sidebar, .close-sidebar{
+  display: none;
+  border: none; 
+  background: transparent; 
+  margin-left: -37px; 
+  height: 40px;
+  border-radius: 5px;
+}
+
+.open-sidebar:hover {
+  padding-left: 30px;
+  transition: 0.5s;
+  background-color: #eee;
+}
+
 /* Media query
 // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
   .sidebar{
-    display:none;
+    width: 0px;
+  }
+  .open-sidebar, .close-sidebar{
+    display: block;
   }
   .content{
     margin-left: 0;
@@ -78,7 +97,10 @@ ul {
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
   .sidebar{
-    display: none;
+    width: 0px;
+  }
+  .open-sidebar, .close-sidebar{
+    display: block;
   }
   .content{
     margin-left: 0;
@@ -88,16 +110,14 @@ ul {
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
   .sidebar{
-    display: none;
+    width: 0px;
+  }
+  .open-sidebar, .close-sidebar{
+    display: block;
   }
   .content{
     margin-left: 0;
   }
- }
-
-/* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
-  
  }
 
 

@@ -19,7 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    
+
     <title>CookIt</title>
 </head>
 <body>
@@ -57,8 +57,8 @@
 
   <aside>
     <div class="container-fluid posisi">
-      
         <div class="sidebar" id="sidebar">
+          <button class="close-sidebar" style="background: transparent; border: none; float: right; margin-right: 20px;"><img src="assets/img/close.png" alt="" style="width: 10px; height: 10px;"></button>
           <div class="profile">
             <div class="profile-img">
               <img src="assets/img/ic_img_person_woman.png" alt="">
@@ -90,7 +90,9 @@
           </ul>
         </div>
 
+        <!-- content -->
         <div class="row content">
+          <button class="open-sidebar"><img src="assets/img/next.png" alt="show sidebar"><span> </span></button>
             <div class="col-12" style="margin-top: 50px; margin-bottom: 10px;">
                 <h3>Personal Account</h3>
             </div>
@@ -121,7 +123,7 @@
                               </div>
                             </form>
                           </span>
-                         <a class="read" style="float: right; color:#fff;">a<img src="assets/img/down-arrow.png"alt="" class="more-img"></a>
+                         <a class="read" style="float: right; color:#fff;"><img src="assets/img/down-arrow.png"alt="" class="more-img"></a>
                       </li>
                       <li class="list-group-item">
                         Change password
@@ -143,7 +145,7 @@
                               </div>
                             </form>
                           </span>
-                          <a class="read" style="float: right; color: #fff;">b<img src="assets/img/down-arrow.png"alt="" class="more-img"></a>
+                          <a class="read" style="float: right; color: #fff;"><img src="assets/img/down-arrow.png"alt="" class="more-img"></a>
                       </li>
                       <li class="list-group-item">
                         Change email
@@ -454,7 +456,7 @@
         
               <!-- Modal footer -->
               <div class="modal-footer">
-                  <a href="#"><button type="button" class="btn btn-success" data-dismiss="modal">Yes</button></a>
+                <a href="settings-page.html"><button type="button" class="btn btn-success">Yes</button></a>
               </div>
             </div>
           </div>
@@ -464,5 +466,6 @@
     </aside>
 
     <script src="assets/js/settings-page.js"></script>
+    <script src="assets/js/dashboard.js"></script>
 </body>
 </html>

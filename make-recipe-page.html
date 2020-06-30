@@ -13,47 +13,7 @@
 
     <link rel="stylesheet" href="assets/css/make-recipe.css">
     
-    <script src="assets/js/jquery-3.1.0.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        var total_member = 1;
 
-        function tambahMember(){
-          var n = total_member + 1;
-
-          var isi = '<div class="member" id="tambahmember'+total_member+'" style="display:none">';
-
-          isi += '<div class="col-lg-12" style="margin-top: 20px;"><span class="placeholder">STEPS</span><div class="steps-img" style="width: 70%; margin: auto; height: 150px; background-color: #eee; vertical-align: center; text-align: center;"><a href="#"><img src="assets/img/photo-camera.png" alt="" style="width: 60px; margin-top: 20px;"><p style="font-weight: bold;">Tap to insert photos</p></a></div><input type="text" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">';
-
-          isi += '</div>';
-
-          $('button.btn-tambah').before(isi);
-          $('#tambahmember'+total_member).slideDown('medium');
-
-          total_member++;
-        }
-
-        function hapusMember(){
-          total_member--;
-          if(total_member<=1){
-            total_member = 1;
-          }
-          $('#tambahmember'+total_member).slideUp('medium', function(){
-            $(this).remove();
-          });
-        }
-
-        $('button.btn-tambah').click(function(){
-          tambahMember();
-        });
-
-        $('button.btn-kurang').click(function(){
-          hapusMember();
-        });
-
-        });
-    </script>
-    
     <title>CookIt</title>
 </head>
 <body>
@@ -100,7 +60,7 @@
             </div>
           </div>
           <div class="col-lg-12" style="margin-top: 50px;">
-            <input type="text" placeholder="TITLE" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
+            <input type="text" placeholder="TITLE" id="data" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
           </div>
           <div class="col-lg-12" style="margin-top: 20px;">
             <input type="text" placeholder="DESCRIPTION" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
@@ -121,10 +81,10 @@
           </div>
           <div class="col-lg-12" style="margin-top: 20px;">
             <span class="placeholder">What kind of this menu :</span> <br>
-            <input type="radio" name="kind of menu" class="a"> appetizer <br>
-            <input type="radio" name="kind of menu" class="a"> dessert <br>
-            <input type="radio" name="kind of menu" class="a"> soup <br>
-            <input type="radio" name="kind of menu" class="a"> beverages
+            <input type="radio" name="kind of menu" id="data" class="a"> appetizer <br>
+            <input type="radio" name="kind of menu" id="data" class="a"> dessert <br>
+            <input type="radio" name="kind of menu" id="data" class="a"> soup <br>
+            <input type="radio" name="kind of menu" id="data" class="a"> beverages
           </div>
           <div class="col-lg-12" style="margin-top: 20px;">
             <span class="placeholder">help someone to find this recipe easiser :</span> <br>
@@ -142,11 +102,15 @@
             <button class="hastag">#highcalcium</button>
           </div>
           <div class="col-lg-12" style="margin-top: 50px; margin-bottom: 100px;">
-            <button class="btn-saverecipe" style="background-color: #999;">Reset</button>
-            <button class="btn-saverecipe">Save Recipe</button>
+            <button class="btn-saverecipe" id="reset" style="background-color: #999;" onclick="validation()">Reset</button>
+            <button class="btn-saverecipe" id="save"onclick="dataSave()">Save Recipe</button>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- js -->
+    <script src="assets/js/jquery-3.1.0.min.js"></script>
+    <script src="assets/js/make-recipe.js"></script>
 </body>
 </html>
