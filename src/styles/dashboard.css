@@ -1,0 +1,169 @@
+.posisi{
+  margin-top: 70px;
+}
+
+.sidebar{
+  background-color: #ddd;
+  padding-top: 40px;
+  position: fixed;
+  width: 250px;
+  left: 0;
+  height: 600px;
+  overflow-x: hidden;
+<<<<<<< HEAD:assets/css/dashboard.css
+  z-index: 1;  
+=======
+  z-index: 1;
+>>>>>>> origin/development:src/styles/dashboard.css
+}
+.sidebar, ul, li, a{
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: none;
+}
+.profile{
+  width: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns:1hr 1hr 1hr ;
+  grid-template-areas: "img img img"
+                      "name name name"
+                      "foll1 foll2 foll3";
+  text-align: center;
+  row-gap: 10px;             
+ }
+ .profile-img{
+   grid-area: img;
+ }
+ .profile-name{
+   grid-area: name;
+ }
+ .profile-followers1{
+  grid-area: foll1;
+  text-align: center;
+  border-right: 1px solid black;
+ }
+ .profile-followers2{
+   grid-area: foll2;
+   text-align: center;
+   border-right: 1px solid black;
+}
+.profile-followers3{
+   grid-area: foll3;
+   text-align: center;
+}
+
+.content{
+  margin-top: 0px;
+  margin-left: 250px;
+}
+
+.btn-cookplan{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.open-sidebar, .close-sidebar{
+  display: none;
+<<<<<<< HEAD:assets/css/dashboard.css
+}
+=======
+  border: none; 
+  background: transparent; 
+  margin-left: -37px; 
+  height: 40px;
+  border-radius: 5px;
+}
+
+.open-sidebar:hover {
+  padding-left: 30px;
+  transition: 0.5s;
+  background-color: #eee;
+}
+
+>>>>>>> origin/development:src/styles/dashboard.css
+/* Media query
+// Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .sidebar{
+    width: 0px;
+  }
+  .open-sidebar, .close-sidebar{
+    display: block;
+  }
+  .content{
+    margin-left: 0;
+  }
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .sidebar{
+    width: 0px;
+  }
+  .open-sidebar, .close-sidebar{
+    display: block;
+  }
+  .content{
+    margin-left: 0;
+  }
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+  .sidebar{
+    width: 0px;
+  }
+  .open-sidebar, .close-sidebar{
+    display: block;
+  }
+  .content{
+    margin-left: 0;
+  }
+ }
+
+<<<<<<< HEAD:assets/css/dashboard.css
+/* // Large devices (desktops, less than 1200px) */
+=======
+
+/* .container-dash{
+  margin-top: 70px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "side main"
+                      "footer footer";
+  column-gap: 20px;
+  background-color: black;
+}
+
+aside{
+  grid-area: side;
+  background-color: #ddd;
+  padding: 0px 0 0 10px;
+}
+.sidebar, ul, li, a{
+  text-decoration: none;
+  color: #333;
+  margin-top: 10px ;
+}
+ul {
+  list-style: none;
+}
+
+main{
+  grid-area: main;
+  background-color: lightblue;
+}
+footer{
+  grid-area: footer;
+  background-color: #333;
+} */
+>>>>>>> origin/development:src/styles/dashboard.css
