@@ -4,11 +4,10 @@
   "description": "Final projek mengenai Pemrograman Web",
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js",
-    "start-dev": "webpack-dev-server --config webpack.dev.js --open"
+    "start-dev": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
-  "heroku-run-build-script":true,
+  "heroku-run-build-script": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abdhilabs/CookIt.git"
@@ -45,6 +44,5 @@
     "popper.js": "^1.16.1",
     "regenerator-runtime": "^0.13.5",
     "unirest": "^0.6.0"
-  },
-  "keywords": []
+  }
 }

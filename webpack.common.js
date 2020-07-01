@@ -23,47 +23,47 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: '/src/index.html'
+            template: 'src/index.html'
         }), // Generates default index.html
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'recipe-page.html',
-            template: '/src/recipe-page.html'
+            template: 'src/recipe-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'detail-recipe-page.html',
-            template: '/src/detail-recipe-page.html'
+            template: 'src/detail-recipe-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'dashboard-page.html',
-            template: '/src/dashboard-page.html'
+            template: 'src/dashboard-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'detail-videorecepty-page.html',
-            template: '/src/detail-videorecepty-page.html'
+            template: 'src/detail-videorecepty-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'login-page.html',
-            template: '/src/login-page.html'
+            template: 'src/login-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'make-recipe-page.html',
-            template: '/src/make-recipe-page.html'
+            template: 'src/make-recipe-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'raw-materials-page.html',
-            template: '/src/raw-materials-page.html'
+            template: 'src/raw-materials-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'register-page.html',
-            template: '/src/register-page.html'
+            template: 'src/register-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'settings-page.html',
-            template: '/src/settings-page.html'
+            template: 'src/settings-page.html'
         }),
         new HtmlWebpackPlugin({ // Also generate a test.html
             filename: 'videorecepty-page.html',
-            template: '/src/videorecepty-page.html'
+            template: 'src/videorecepty-page.html'
         }),
         new CopyWebpackPlugin({
             patterns: [{
