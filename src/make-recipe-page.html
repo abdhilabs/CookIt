@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- favicon -->
-<link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- favicon -->
 
-    <title>CookIt</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+
+  <title>CookIt</title>
 </head>
+
 <body>
-    <header>
-      <app-bar></app-bar>
-    </header>
-    <main>
-      <div class="wrapper-form">
-        <div class="row" style="margin-top: 70px;">
-          <div class="col-lg-12">
-            <div class="img" style=" background-color: #eee; height: 400px; text-align: center;">
-              <a href="">
+  <header>
+    <app-bar></app-bar>
+  </header>
+  <main>
+    <div class="wrapper-form">
+      <div class="row" style="margin-top: 70px;">
+        <div class="col-lg-12">
+          <div class="img" style=" background-color: #eee; height: 400px; text-align: center;">
+            <a href="">
               <img src="/src/img/photo-camera.png" alt="" style="margin-top: 100px;">
               <p style="font-weight: bold;">Tap to insert photos</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-12" style="margin-top: 50px;">
-            <input type="text" placeholder="TITLE" id="data" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
-          </div>
-          <div class="col-lg-12" style="margin-top: 20px;">
-            <input type="text" placeholder="DESCRIPTION" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
-          </div>
-          <div class="col-lg-12" style="margin-top: 20px;">
-            <input type="text" placeholder="INGRIDIENTS" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
-          </div>
-          <div class="col-lg-12" style="margin-top: 20px;">
-            <span class="placeholder">STEPS</span>
-            <div class="steps-img" style="width: 70%; margin: auto; height: 150px; background-color: #eee; text-align: center;">
-              <a href="#">
-                <img src="/src/img/photo-camera.png" alt="" style="width: 60px; margin-top: 20px;">
-                <p style="font-weight: bold;">Tap to insert photos</p>
-              </a>
-            </div>
-            <input type="text" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
-            <button class="btn-tambah btn-style"><img src="/src/img/plus.png" alt=""></button><button class="btn-kurang btn-style"><img src="/src/img/minus.png" alt=""></button>
-          </div>
-          <div class="col-lg-12" style="margin-top: 20px;">
-            <span class="placeholder">What kind of this menu :</span> <br>
-            <input type="radio" name="kind of menu" id="data" class="a"> appetizer <br>
-            <input type="radio" name="kind of menu" id="data" class="a"> dessert <br>
-            <input type="radio" name="kind of menu" id="data" class="a"> soup <br>
-            <input type="radio" name="kind of menu" id="data" class="a"> beverages
-          </div>
-          <div class="col-lg-12" style="margin-top: 20px;">
-            <span class="placeholder">help someone to find this recipe easiser :</span> <br>
-            <button class="hastag">#homemade</button>
-            <button class="hastag">#diets</button>
-            <button class="hastag">#forkids</button>
-            <button class="hastag">#easytomake</button>
-            <button class="hastag">#lowfat</button>
-            <button class="hastag">#delicious</button>
-            <button class="hastag">#100%halal</button>
-            <button class="hastag">#cheap</button>
-            <button class="hastag">#healty</button>
-            <button class="hastag">#just10minutes</button>
-            <button class="hastag">#DIY</button>
-            <button class="hastag">#highcalcium</button>
-          </div>
-          <div class="col-lg-12" style="margin-top: 50px; margin-bottom: 100px;">
-            <button class="btn-saverecipe" id="reset" style="background-color: #999;" onclick="validation()">Reset</button>
-            <button class="btn-saverecipe" id="save"onclick="dataSave()">Save Recipe</button>
+            </a>
           </div>
         </div>
+        <div class="col-lg-12" style="margin-top: 50px;">
+          <input type="text" placeholder="TITLE" id="data"
+            style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
+        </div>
+        <div class="col-lg-12" style="margin-top: 20px;">
+          <input type="text" placeholder="DESCRIPTION"
+            style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
+        </div>
+        <div class="col-lg-12" style="margin-top: 20px;">
+          <input type="text" placeholder="INGRIDIENTS"
+            style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
+        </div>
+        <div class="col-lg-12" style="margin-top: 20px;">
+          <span class="placeholder">STEPS</span>
+          <div class="steps-img"
+            style="width: 70%; margin: auto; height: 150px; background-color: #eee; text-align: center;">
+            <a href="#">
+              <img src="/src/img/photo-camera.png" alt="" style="width: 60px; margin-top: 20px;">
+              <p style="font-weight: bold;">Tap to insert photos</p>
+            </a>
+          </div>
+          <input type="text" style="border: none; width: 100%; border-bottom: 1px solid #333; outline: none;">
+          <button class="btn-tambah btn-style"><img src="/src/img/plus.png" alt=""></button><button
+            class="btn-kurang btn-style"><img src="/src/img/minus.png" alt=""></button>
+        </div>
+        <div class="col-lg-12" style="margin-top: 20px;">
+          <span class="placeholder">What kind of this menu :</span> <br>
+          <input type="radio" name="kind of menu" id="data" class="a"> appetizer <br>
+          <input type="radio" name="kind of menu" id="data" class="a"> dessert <br>
+          <input type="radio" name="kind of menu" id="data" class="a"> soup <br>
+          <input type="radio" name="kind of menu" id="data" class="a"> beverages
+        </div>
+        <div class="col-lg-12" style="margin-top: 20px;">
+          <span class="placeholder">help someone to find this recipe easiser :</span> <br>
+          <button class="hastag">#homemade</button>
+          <button class="hastag">#diets</button>
+          <button class="hastag">#forkids</button>
+          <button class="hastag">#easytomake</button>
+          <button class="hastag">#lowfat</button>
+          <button class="hastag">#delicious</button>
+          <button class="hastag">#100%halal</button>
+          <button class="hastag">#cheap</button>
+          <button class="hastag">#healty</button>
+          <button class="hastag">#just10minutes</button>
+          <button class="hastag">#DIY</button>
+          <button class="hastag">#highcalcium</button>
+        </div>
+        <div class="col-lg-12" style="margin-top: 50px; margin-bottom: 100px;">
+          <button class="btn-saverecipe" id="reset" style="background-color: #999;"
+            onclick="validation()">Reset</button>
+          <button class="btn-saverecipe" id="save" onclick="dataSave()">Save Recipe</button>
+        </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- js -->
-    <script src="/src/script/jquery-3.1.0.min.js"></script>
+  <!-- js -->
+  <script src="/src/script/jquery-3.1.0.min.js"></script>
 </body>
+
 </html>

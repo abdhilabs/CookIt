@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="/src/styles/main.css">
-    
-    <!-- script untuk modal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- favicon -->
 
-    <title>CookIt</title>
+
+  <link rel="stylesheet" href="/src/styles/main.css">
+
+  <!-- script untuk modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <title>CookIt</title>
 </head>
+
 <body>
   <header>
     <app-bar></app-bar>
@@ -26,379 +28,429 @@
 
   <aside>
     <div class="container-fluid posisi">
-        <div class="sidebar" id="sidebar">
-          <button class="close-sidebar" style="background: transparent; border: none; float: right; margin-right: 20px;"><img src="/src/img/close.png" alt="" style="width: 10px; height: 10px;"></button>
-          <div class="profile">
-            <div class="profile-img">
-              <img src="/src/img/ic_img_person_woman.png" alt="">
-            </div>
-            <div class="profile-name">
-              Chef Virgil Abloh
-            </div>
-            <div class="profile-followers1">
-              8<br>
-              Followers
-            </div>
-            <div class="profile-followers2">
-              3<br>
-              Following
-            </div>
-            <div class="profile-followers3">
-              2001<br>
-              Recipe
-            </div>
+      <div class="sidebar" id="sidebar">
+        <button class="close-sidebar"
+          style="background: transparent; border: none; float: right; margin-right: 20px;"><img src="/src/img/close.png"
+            alt="" style="width: 10px; height: 10px;"></button>
+        <div class="profile">
+          <div class="profile-img">
+            <img src="/src/img/ic_img_person_woman.png" alt="">
           </div>
-
-          <ul>
-            <li class="item"><a href="dashboard-page.html">Dashboard</a></li>
-            <li class="item"><a href="dashboard-page.html">Cooking Plan</a></li>
-            <li class="item"><a href="make-recipe-page.html">Make Recipes</a></li>
-            <li class="item"><a href="#">Settings</a></li>
-            <li class="item"><a href="#" data-toggle="modal" data-target="#myModal">Sign Out</a></li>
-          </ul>
+          <div class="profile-name">
+            Chef Virgil Abloh
+          </div>
+          <div class="profile-followers1">
+            8<br>
+            Followers
+          </div>
+          <div class="profile-followers2">
+            3<br>
+            Following
+          </div>
+          <div class="profile-followers3">
+            2001<br>
+            Recipe
+          </div>
         </div>
 
-        <!-- content -->
-        <div class="row content">
-          <button class="open-sidebar"><img src="/src/img/next.png" alt="show sidebar"><span> </span></button>
-            <div class="col-12" style="margin-top: 50px; margin-bottom: 10px;">
-                <h3>Personal Account</h3>
-            </div>
-            <div class="col-lg-12">
-                <div class="card" style="width: 100%;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        Account Name
-                          <span class="dots"></span>
-                          <span class="more">
-                            <form class="mt-4">
-                              <div class="row">
-                                <div class="col-12">
-                                  <input class="form-control mb-2" type="text" placeholder="Rinanda Isac" readonly>
-                                </div>
-                                <div class="col-12 mb-2">
-                                  Change here :
-                                </div>
-                                <div class="col">
-                                  <input type="text" class="form-control" placeholder="First name">
-                                </div>
-                                <div class="col">
-                                  <input type="text" class="form-control" placeholder="Last name">
-                                </div>
-                                <div class="col-12 mt-2 mb-2">
-                                  <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#modalUpdate">Update</button>
-                                </div>
-                              </div>
-                            </form>
-                          </span>
-                         <a class="read" style="float: right; color:#fff;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                      </li>
-                      <li class="list-group-item">
-                        Change password
+        <ul>
+          <li class="item"><a href="dashboard-page.html">Dashboard</a></li>
+          <li class="item"><a href="dashboard-page.html">Cooking Plan</a></li>
+          <li class="item"><a href="make-recipe-page.html">Make Recipes</a></li>
+          <li class="item"><a href="#">Settings</a></li>
+          <li class="item"><a href="#" data-toggle="modal" data-target="#myModal">Sign Out</a></li>
+        </ul>
+      </div>
 
-                        <span class="dots"></span>
-                          <span class="more">
-                            <form class="mt-4">
-                              <div class="row justify-content-center">
-                                <div class="col-10 mb-2">
-                                  <label for="exampleInputPassword1">New Password :</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                                <div class="col-10">
-                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Retype Password">
-                                </div>
-                                <div class="col-10 mt-2 mb-2">
-                                  <button type="button" class="btn btn-primary float-right">Update</button>
-                                </div>
-                              </div>
-                            </form>
-                          </span>
-                          <a class="read" style="float: right; color: #fff;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                      </li>
-                      <li class="list-group-item">
-                        Change email
-                        <span class="dots"></span>
-                          <span class="more">
-                            <form class="mt-4">
-                              <div class="row justify-content-center">
-                                <div class="col-10 mb-2">
-                                  <label for="exampleInputEmail1">Email address :</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your new email">
-                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                </div>
-                                <div class="col-10 mt-2 mb-2">
-                                  <button type="button" class="btn btn-primary float-right">Update</button>
-                                </div>
-                              </div>
-                            </form>
-                          </span>
-                          <a class="read" style="float: right;"><img src="/src/img/down-arrow.png"alt=""  class="more-img"></a>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="col-12" style="margin-top: 50px; margin-bottom: 10px;">
-              <h3>General Settings</h3>
+      <!-- content -->
+      <div class="row content">
+        <button class="open-sidebar"><img src="/src/img/next.png" alt="show sidebar"><span> </span></button>
+        <div class="col-12" style="margin-top: 50px; margin-bottom: 10px;">
+          <h3>Personal Account</h3>
+        </div>
+        <div class="col-lg-12">
+          <div class="card" style="width: 100%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Account Name
+                <span class="dots"></span>
+                <span class="more">
+                  <form class="mt-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <input class="form-control mb-2" type="text" placeholder="Rinanda Isac" readonly>
+                      </div>
+                      <div class="col-12 mb-2">
+                        Change here :
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div>
+                      <div class="col-12 mt-2 mb-2">
+                        <button type="button" class="btn btn-primary float-right" data-toggle="modal"
+                          data-target="#modalUpdate">Update</button>
+                      </div>
+                    </div>
+                  </form>
+                </span>
+                <a class="read" style="float: right; color:#fff;"><img src="/src/img/down-arrow.png" alt=""
+                    class="more-img"></a>
+              </li>
+              <li class="list-group-item">
+                Change password
+
+                <span class="dots"></span>
+                <span class="more">
+                  <form class="mt-4">
+                    <div class="row justify-content-center">
+                      <div class="col-10 mb-2">
+                        <label for="exampleInputPassword1">New Password :</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="col-10">
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                          placeholder="Retype Password">
+                      </div>
+                      <div class="col-10 mt-2 mb-2">
+                        <button type="button" class="btn btn-primary float-right">Update</button>
+                      </div>
+                    </div>
+                  </form>
+                </span>
+                <a class="read" style="float: right; color: #fff;"><img src="/src/img/down-arrow.png" alt=""
+                    class="more-img"></a>
+              </li>
+              <li class="list-group-item">
+                Change email
+                <span class="dots"></span>
+                <span class="more">
+                  <form class="mt-4">
+                    <div class="row justify-content-center">
+                      <div class="col-10 mb-2">
+                        <label for="exampleInputEmail1">Email address :</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                          placeholder="Enter your new email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                          else.</small>
+                      </div>
+                      <div class="col-10 mt-2 mb-2">
+                        <button type="button" class="btn btn-primary float-right">Update</button>
+                      </div>
+                    </div>
+                  </form>
+                </span>
+                <a class="read" style="float: right;"><img src="/src/img/down-arrow.png" alt="" class="more-img"></a>
+              </li>
+            </ul>
           </div>
-          <div class="col-lg-12">
-              <div class="card" style="width: 100%;">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      Notification preferences
-                        <span class="dots"></span>
-                        <span class="more">
+        </div>
+
+        <div class="col-12" style="margin-top: 50px; margin-bottom: 10px;">
+          <h3>General Settings</h3>
+        </div>
+        <div class="col-lg-12">
+          <div class="card" style="width: 100%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Notification preferences
+                <span class="dots"></span>
+                <span class="more">
+                  <div class="form-check">
+                    <form class="mt-4">
+                      <div class="row mb-2">
+                        <div class="col-6 col-lg-3">
                           <div class="form-check">
-                            <form class="mt-4">
-                              <div class="row mb-2">
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Float Notification
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Email Notification
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Update Recipe
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Sync to Facebook
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Always Notify me
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Notify ads
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Sync to Instagram
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Pause All Notification
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Snoze Notification
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-6 col-lg-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Requets Followers
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col-12 mt-2 mb-2">
-                                  <button type="button" class="btn btn-primary float-right">Submit</button>
-                                </div>
-                              </div>
-                            </form>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Float Notification
+                            </label>
                           </div>
-                        </span>
-                        <a class="read" style="float: right;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                    </li>
-                    <li class="list-group-item">
-                      How cookpad use cookies notification preferences
-                        <span class="dots"></span>
-                        <span class="more">
-                          <h4 class="mt-3">Apa kebijakan cokie kami ?</h4>
-                          <p>Ketika Anda menjelajah Situs atau Aplikasi, kami biasanya menerima beberapa informasi secara otomatis dari peramban Anda. Ini dilakukan dalam bentuk kuki, yaitu file-file kecil yang kami kirimkan ke peramban Anda yang kemudian tersimpan di dalam perangkat Anda. Kami juga dapat menggunakan teknik yang sama dengan Situs dan Aplikasi kami yang juga akan dianggap sebagai "kuki" dalam kebijakan ini.</p>
-                          <p>Ketika Anda mengunjungi Situs atau Aplikasi lagi, peramban Anda otomatis mengirimkan kuki ini kembali ke server kami yang memungkinkan kami mengenali peramban Anda. Kuki yang digunakan pada Situs dan Aplikasi kami telah dikategorikan berdasarkan panduan di dalam panduan kuki UK ICC. Kami menggunakan kuki dalam beberapa cara di dalam kategori sebagai berikut:</p>
-                          <ul style="list-style: disc !important;">
-                            <li>Kuki wajib. Ini adalah kuki yang diperlukan untuk pengoperasian Situs dan Aplikasi kami. Contohnya adalah kuki yang memungkinkan Anda masuk ke area aman pada Situs dan Aplikasi kami.</li>
-                            <li>Kuki fungsionalitas. Kuki ini diperlukan untuk Situs atau Aplikasi kami agar dapat berfungsi dengan benar dan memberikan Anda akses ke Layanan Cookpad yang kami tawarkan. Contohnya, kuki ini memungkinkan Situs mengingat pengaturan yang Anda buat dan memberikan fitur yang lebih meningkat dan lebih pribadi.</li>
-                            <li>Kuki kinerja. Kuki ini memungkinkan kami mengenali dan menghitung jumlah pengunjung dan melihat bagaimana pengunjung berkeliling di Situs atau Aplikasi kami ketika menggunakannya. Kuki ini membantu kami meningkatkan fungsi Situs dan Aplikasi, contohnya, dengan memastikan bahwa pengguna menemukan apa yang mereka cari dengan mudah.</li>
-                            <li>Kuki Target atau Iklan Kuki ini merekam kunjungan Anda pada Situs atau Aplikasi kami, halaman yang telah Anda kunjungi dan pranala yang Anda ikuti. Kami akan menggunakan informasi ini untuk menampilkan Situs dan Aplikasi kami dan iklan yang lebih relevan dengan kepentingan Anda. Kami juga dapat membagi informasi ini dengan pihak ketiga untuk tujuan ini.</li>
-                          </ul>
-                        </span>
-                        <a class="read" style="float: right;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                    </li>
-                    <li class="list-group-item">
-                      Privacy policy
-
-                      <span class="dots"></span>
-                        <span class="more">
-                          <p class="mt-3">Apa yang termasuk di dalam Kebijakan Privasi ini?</p>
-                          <p>Kami memproses informasi tertentu tentang kunjungan Anda atau ketika Anda menggunakan layanan kami yang disediakan oleh Situs atau Aplikasi kami ("Layanan Cookit"). Beberapa informasi tersebut memungkinkan Anda untuk dapat diidentifikasi ("Informasi Pribadi").Kebijakan Privasi ini menjelaskan cara kami mengumpulkan, menyimpan dan menggunakan Informasi Pribadi Anda ketika Anda mengunjungi atau menggunakan Situs atau Aplikasi kami. Kebijakan Privasi ini juga menjelaskan jenis Informasi Pribadi yang kami kumpulkan, cara kami menggunakan Informasi Pribadi ini untuk menjamin bahwa kami memberikan Layanan Cookpad yang sesuai dan tepat waktu kepada Anda, dan meningkatkan pengalaman Anda dalam Layanan Cookit.</p>
-                        </span>
-                        <a class="read" style="float: right;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                    </li>
-                    <li class="list-group-item">
-                      Terms of use
-                      <span class="dots"></span>
-                        <span class="more">
-                          <p>Syarat penggunaan (“Syarat Penggunaan”) ini (bersama dengan dokumen yang dirujuk) memberitahukan kepada Anda syarat yang harus Anda ketahui dalam menggunakan situs resmi (“Situs”) atau aplikasi perangkat mobile Cookit (“Aplikasi”). Penggunaan Situs atau Aplikasi termasuk mengakses, menjelajah, atau mendaftar untuk menggunakan Situs atau Aplikasi. Situs ini dan Aplikasi dioperasikan oleh Cabang Cookpad Inc., terdaftar Inggris, sebuah perusahaan yang terdaftar di 4-20-3 Ebisu, Shibuya-ku, Tokyo, Japan ("we", "us", "our" or "Cookit") dan afiliasinya (yaitu entitas yang mengendalikan, dikendalikan oleh atau di bawah kendali umum Cookit).</p>
-                        </span>
-                        <a class="read" style="float: right;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                    </li>
-                    <li class="list-group-item">
-                      Questions about Cookit (FAQ)
-                      <span class="dots"></span>
-                        <span class="more">
-                          <p class="mt-3">Q: Bagaimana cara mengubah nama pengguna?<br>
-                          A: Pada website dan aplikasi Android, buka profil Anda, ketuk Edit Profil.Sesudah itu Anda dapat mengubah nama pengguna dan foto profil Anda.</p>
-
-                          <p class="mt-2">Q: Bagaimana cara mematikan notifikasi?<br>
-                            A: Kunjungi laman ini untuk mengubah preferensi notifikasi</p>
-
-                          <p class="mt-2">Q: Saya tidak dapat masuk ke akun Cookpad. Bisakah Cookpad menolong saya?<br>
-                            A: Untuk mengatur ulang kata sandi Anda, silakan ketuk di sini dan jika Anda masih mengalami kesulitan, hubungi kami di info-id@cookpad.com</p>
-
-                          <p class="mt-2">Q: Bagaimana cara menerima email?<br>
-                            A: Jika Anda ingin ditambahkan ke daftar email kami, silahkan aktifkan notifikasi pada Preferensi Notifikasi</p>
-                        </span>
-                        <a class="read" style="float: right;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                    </li>
-                    <li class="list-group-item">
-                     License
-                      <span class="dots"></span>
-                        <span class="more">
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur aliquam itaque labore illum. Natus fuga earum accusamus adipisci. Non iste minus modi recusandae natus debitis laboriosam suscipit excepturi sunt maxime?</p>
-                        </span>
-                        <a class="read" style="float: right;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                    </li>
-                    <li class="list-group-item">
-                      Give suggestion
-                       <span class="dots"></span>
-                         <span class="more">
-                          <form class="mt-4">
-                            <div class="row justify-content-center">
-                              <div class="col-10 mb-2">
-                                <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                              </div>
-                              <div class="col-10 mb-2">
-                                <label for="exampleFormControlTextarea1">Your Responses</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                              </div>
-                              <div class="col-10 mt-2 mb-2">
-                                <button type="button" class="btn btn-primary float-right">Submit</button>
-                              </div>
-                            </div>
-                          </form>
-                         </span>
-                         <a class="read" style="float: right;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                     </li>
-                     <li class="list-group-item">
-                      Join Us
-                       <span class="dots"></span>
-                         <span class="more">
-                           <p class="mt-3">Our mission is to make everyday cooking fun. <br>
-                             Cookpad is a tech company building a community platform for people to share recipe ideas and cooking tips. Because we believe that cooking is the key to a happier and healthier life for people, communities and the planet. The choices we make shape our world. And when we cook, the choices we make have an impact on ourselves, the people we cook for, the growers and producers we buy from and the wider environment.
-                             By solving the issues related to everyday cooking and helping more people to cook, we believe we can help build a better world.
-                             </p>
-                             <button type="button" class="btn btn-primary">Join Us</button>
-                         </span>
-                         <a class="read" style="float: right;"><img src="/src/img/down-arrow.png"alt="" class="more-img"></a>
-                     </li>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Email Notification
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Update Recipe
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Sync to Facebook
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Always Notify me
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Notify ads
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Sync to Instagram
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Pause All Notification
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Snoze Notification
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Requets Followers
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2 mb-2">
+                          <button type="button" class="btn btn-primary float-right">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </span>
+                <a class="read" style="float: right;"><img src="/src/img/down-arrow.png" alt="" class="more-img"></a>
+              </li>
+              <li class="list-group-item">
+                How cookpad use cookies notification preferences
+                <span class="dots"></span>
+                <span class="more">
+                  <h4 class="mt-3">Apa kebijakan cokie kami ?</h4>
+                  <p>Ketika Anda menjelajah Situs atau Aplikasi, kami biasanya menerima beberapa informasi secara
+                    otomatis dari peramban Anda. Ini dilakukan dalam bentuk kuki, yaitu file-file kecil yang kami
+                    kirimkan ke peramban Anda yang kemudian tersimpan di dalam perangkat Anda. Kami juga dapat
+                    menggunakan teknik yang sama dengan Situs dan Aplikasi kami yang juga akan dianggap sebagai "kuki"
+                    dalam kebijakan ini.</p>
+                  <p>Ketika Anda mengunjungi Situs atau Aplikasi lagi, peramban Anda otomatis mengirimkan kuki ini
+                    kembali ke server kami yang memungkinkan kami mengenali peramban Anda. Kuki yang digunakan pada
+                    Situs dan Aplikasi kami telah dikategorikan berdasarkan panduan di dalam panduan kuki UK ICC. Kami
+                    menggunakan kuki dalam beberapa cara di dalam kategori sebagai berikut:</p>
+                  <ul style="list-style: disc !important;">
+                    <li>Kuki wajib. Ini adalah kuki yang diperlukan untuk pengoperasian Situs dan Aplikasi kami.
+                      Contohnya adalah kuki yang memungkinkan Anda masuk ke area aman pada Situs dan Aplikasi kami.</li>
+                    <li>Kuki fungsionalitas. Kuki ini diperlukan untuk Situs atau Aplikasi kami agar dapat berfungsi
+                      dengan benar dan memberikan Anda akses ke Layanan Cookpad yang kami tawarkan. Contohnya, kuki ini
+                      memungkinkan Situs mengingat pengaturan yang Anda buat dan memberikan fitur yang lebih meningkat
+                      dan lebih pribadi.</li>
+                    <li>Kuki kinerja. Kuki ini memungkinkan kami mengenali dan menghitung jumlah pengunjung dan melihat
+                      bagaimana pengunjung berkeliling di Situs atau Aplikasi kami ketika menggunakannya. Kuki ini
+                      membantu kami meningkatkan fungsi Situs dan Aplikasi, contohnya, dengan memastikan bahwa pengguna
+                      menemukan apa yang mereka cari dengan mudah.</li>
+                    <li>Kuki Target atau Iklan Kuki ini merekam kunjungan Anda pada Situs atau Aplikasi kami, halaman
+                      yang telah Anda kunjungi dan pranala yang Anda ikuti. Kami akan menggunakan informasi ini untuk
+                      menampilkan Situs dan Aplikasi kami dan iklan yang lebih relevan dengan kepentingan Anda. Kami
+                      juga dapat membagi informasi ini dengan pihak ketiga untuk tujuan ini.</li>
                   </ul>
-              </div>
-          </div>
+                </span>
+                <a class="read" style="float: right;"><img src="/src/img/down-arrow.png" alt="" class="more-img"></a>
+              </li>
+              <li class="list-group-item">
+                Privacy policy
 
-          </div>
+                <span class="dots"></span>
+                <span class="more">
+                  <p class="mt-3">Apa yang termasuk di dalam Kebijakan Privasi ini?</p>
+                  <p>Kami memproses informasi tertentu tentang kunjungan Anda atau ketika Anda menggunakan layanan kami
+                    yang disediakan oleh Situs atau Aplikasi kami ("Layanan Cookit"). Beberapa informasi tersebut
+                    memungkinkan Anda untuk dapat diidentifikasi ("Informasi Pribadi").Kebijakan Privasi ini menjelaskan
+                    cara kami mengumpulkan, menyimpan dan menggunakan Informasi Pribadi Anda ketika Anda mengunjungi
+                    atau menggunakan Situs atau Aplikasi kami. Kebijakan Privasi ini juga menjelaskan jenis Informasi
+                    Pribadi yang kami kumpulkan, cara kami menggunakan Informasi Pribadi ini untuk menjamin bahwa kami
+                    memberikan Layanan Cookpad yang sesuai dan tepat waktu kepada Anda, dan meningkatkan pengalaman Anda
+                    dalam Layanan Cookit.</p>
+                </span>
+                <a class="read" style="float: right;"><img src="/src/img/down-arrow.png" alt="" class="more-img"></a>
+              </li>
+              <li class="list-group-item">
+                Terms of use
+                <span class="dots"></span>
+                <span class="more">
+                  <p>Syarat penggunaan (“Syarat Penggunaan”) ini (bersama dengan dokumen yang dirujuk) memberitahukan
+                    kepada Anda syarat yang harus Anda ketahui dalam menggunakan situs resmi (“Situs”) atau aplikasi
+                    perangkat mobile Cookit (“Aplikasi”). Penggunaan Situs atau Aplikasi termasuk mengakses, menjelajah,
+                    atau mendaftar untuk menggunakan Situs atau Aplikasi. Situs ini dan Aplikasi dioperasikan oleh
+                    Cabang Cookpad Inc., terdaftar Inggris, sebuah perusahaan yang terdaftar di 4-20-3 Ebisu,
+                    Shibuya-ku, Tokyo, Japan ("we", "us", "our" or "Cookit") dan afiliasinya (yaitu entitas yang
+                    mengendalikan, dikendalikan oleh atau di bawah kendali umum Cookit).</p>
+                </span>
+                <a class="read" style="float: right;"><img src="/src/img/down-arrow.png" alt="" class="more-img"></a>
+              </li>
+              <li class="list-group-item">
+                Questions about Cookit (FAQ)
+                <span class="dots"></span>
+                <span class="more">
+                  <p class="mt-3">Q: Bagaimana cara mengubah nama pengguna?<br>
+                    A: Pada website dan aplikasi Android, buka profil Anda, ketuk Edit Profil.Sesudah itu Anda dapat
+                    mengubah nama pengguna dan foto profil Anda.</p>
 
-         <!-- Footer -->
-         <div class="row content">
-           <div class="col-12 ">
-            <footer class="footer border-top p-5 pt-5">
-              <footer-bar></footer-bar>
-            </footer>
-           </div>
-         </div>
-    
-          <!-- MODALS SIGNOUT -->
-         <div class="modal fade" id="myModal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-        
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">SIGNOUT</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-        
-              <!-- Modal body -->
-              <div class="modal-body">
-                  Do you want to SignOut ?
-              </div>
-        
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                  <a href="login-page.html"><button type="button" class="btn btn-danger">Yes</button></a>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-              </div>
-            </div>
+                  <p class="mt-2">Q: Bagaimana cara mematikan notifikasi?<br>
+                    A: Kunjungi laman ini untuk mengubah preferensi notifikasi</p>
+
+                  <p class="mt-2">Q: Saya tidak dapat masuk ke akun Cookpad. Bisakah Cookpad menolong saya?<br>
+                    A: Untuk mengatur ulang kata sandi Anda, silakan ketuk di sini dan jika Anda masih mengalami
+                    kesulitan, hubungi kami di info-id@cookpad.com</p>
+
+                  <p class="mt-2">Q: Bagaimana cara menerima email?<br>
+                    A: Jika Anda ingin ditambahkan ke daftar email kami, silahkan aktifkan notifikasi pada Preferensi
+                    Notifikasi</p>
+                </span>
+                <a class="read" style="float: right;"><img src="/src/img/down-arrow.png" alt="" class="more-img"></a>
+              </li>
+              <li class="list-group-item">
+                License
+                <span class="dots"></span>
+                <span class="more">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur aliquam itaque labore illum.
+                    Natus fuga earum accusamus adipisci. Non iste minus modi recusandae natus debitis laboriosam
+                    suscipit excepturi sunt maxime?</p>
+                </span>
+                <a class="read" style="float: right;"><img src="/src/img/down-arrow.png" alt="" class="more-img"></a>
+              </li>
+              <li class="list-group-item">
+                Give suggestion
+                <span class="dots"></span>
+                <span class="more">
+                  <form class="mt-4">
+                    <div class="row justify-content-center">
+                      <div class="col-10 mb-2">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                          placeholder="name@example.com">
+                      </div>
+                      <div class="col-10 mb-2">
+                        <label for="exampleFormControlTextarea1">Your Responses</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="col-10 mt-2 mb-2">
+                        <button type="button" class="btn btn-primary float-right">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </span>
+                <a class="read" style="float: right;"><img src="/src/img/down-arrow.png" alt="" class="more-img"></a>
+              </li>
+              <li class="list-group-item">
+                Join Us
+                <span class="dots"></span>
+                <span class="more">
+                  <p class="mt-3">Our mission is to make everyday cooking fun. <br>
+                    Cookpad is a tech company building a community platform for people to share recipe ideas and cooking
+                    tips. Because we believe that cooking is the key to a happier and healthier life for people,
+                    communities and the planet. The choices we make shape our world. And when we cook, the choices we
+                    make have an impact on ourselves, the people we cook for, the growers and producers we buy from and
+                    the wider environment.
+                    By solving the issues related to everyday cooking and helping more people to cook, we believe we can
+                    help build a better world.
+                  </p>
+                  <button type="button" class="btn btn-primary">Join Us</button>
+                </span>
+                <a class="read" style="float: right;"><img src="/src/img/down-arrow.png" alt="" class="more-img"></a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <!-- MODALS Update -->
-        <div class="modal fade" id="modalUpdate">
-          <div class="modal-dialog">
-            <div class="modal-content">
-        
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Updated</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-        
-              <!-- Modal body
+      </div>
+
+      <!-- Footer -->
+      <div class="row content">
+        <div class="col-12 ">
+          <footer class="footer border-top p-5 pt-5">
+            <footer-bar></footer-bar>
+          </footer>
+        </div>
+      </div>
+
+      <!-- MODALS SIGNOUT -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">SIGNOUT</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Do you want to SignOut ?
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <a href="login-page.html"><button type="button" class="btn btn-danger">Yes</button></a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODALS Update -->
+      <div class="modal fade" id="modalUpdate">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Updated</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body
               <div class="modal-body">
                   Do you want to SignOut ?
               </div> -->
-        
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <a href="settings-page.html"><button type="button" class="btn btn-success">Yes</button></a>
-              </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <a href="settings-page.html"><button type="button" class="btn btn-success">Yes</button></a>
             </div>
           </div>
         </div>
+      </div>
 
     </div>
-    </aside>
+  </aside>
 </body>
+
 </html>

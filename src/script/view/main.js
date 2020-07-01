@@ -1,4 +1,4 @@
-const apikey = '35b581884b27467780d813946d34cfc7';
+const apikey = '43b90a19566e4a249596808b1a6e99d4';
 
 function getViral() {
     fetch('https://api.spoonacular.com/recipes/random?number=6&apiKey=' + apikey, {

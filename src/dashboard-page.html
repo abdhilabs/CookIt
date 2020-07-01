@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="/src/styles/main.css">
-    
-    <!-- script untuk modal -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    
-    <title>CookIt</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- favicon -->
+
+
+  <link rel="stylesheet" href="/src/styles/main.css">
+
+  <!-- script untuk modal -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <title>CookIt</title>
 </head>
+
 <body>
   <header>
     <app-bar></app-bar>
@@ -22,342 +26,351 @@
 
   <aside>
     <div class="container-fluid posisi">
-      
-        <div class="sidebar" id="sidebar">
-            <button class="close-sidebar" style="background: transparent; border: none; float: right; margin-right: 20px;"><img src="/src/img/close.png" alt="" style="width: 10px; height: 10px;"></button>
-          <div class="profile">
-            <div class="profile-img">
-              <img src="/src/img/ic_img_person_woman.png" alt="">
-            </div>
-            <div class="profile-name">
-              Chef Virgil Abloh
-            </div>
-            <div class="profile-followers1">
-              8<br>
-              Followers
-            </div>
-            <div class="profile-followers2">
-              3<br>
-              Following
-            </div>
-            <div class="profile-followers3">
-              2001<br>
-              Recipe
-            </div>
+
+      <div class="sidebar" id="sidebar">
+        <button class="close-sidebar"
+          style="background: transparent; border: none; float: right; margin-right: 20px;"><img src="/src/img/close.png"
+            alt="" style="width: 10px; height: 10px;"></button>
+        <div class="profile">
+          <div class="profile-img">
+            <img src="/src/img/ic_img_person_woman.png" alt="">
           </div>
-
-          <ul>
-            <li class="item"><a href="#dashboard" class="page-scroll">Dashboard</a></li>
-            <li class="item"><a href="#cooking-plan" class="page-scroll">Cooking Plan</a></li>
-            <li class="item"><a href="make-recipe-page.html">Make Recipes</a></li>
-            <li class="item"><a href="settings-page.html">Settings</a></li>
-            <li class="item"><a href="#" data-toggle="modal" data-target="#myModal">Sign Out</a></li>
-          </ul>
-        </div>
-
-        <!-- CONTENT -->
-        <button class="open-sidebar"><img src="/src/img/next.png" alt=""></button>
-        <div class="pt-5 row content justify-content-center">
-          <div class="col-6 col-sm-6 col-md-6 mt-5 col-lg-4" style="text-align: center;">
-            <img src="/src/img/ill_chef.png" alt="" width="90%">
+          <div class="profile-name">
+            Chef Virgil Abloh
           </div>
-          <div class="col-12 col-sm-12 col-lg-8 desc" style="margin-top: 40px;">
-            <h4 id="test" style="font-weight: bold;">Holla, Chef Virgil Abloh</h4>
-            <p>It's beautifull day right ? I hope.... <br> Let's cook delicious food</p>
-            
-            <!-- curently cooking -->
-            <div class="row">
-              <div class="col-12">
-                <p style="color: black !important; font-weight: bold;">YOUR CURRENTLY COOKING</p>
-                <hr>
-              </div>
-              <div class="col-4 col-lg-2">
-                <figure class="figure">
-                    <a href="detail-recipe-page.html">
-                        <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1"
-                        alt="..." style="width: 213px">
-                    </a>
-                    <figcaption class="figure-caption recipes-cc">
-                        <p>Isac Kitchen</p>
-                        <h5>British Cake</h5>
-                    </figcaption>
-                    <div class="row size-desc">
-                        <div class="col justify-content-end d-flex time-cook">
-                            <p>12 minutes</p>
-                        </div>
-                    </div>
-                </figure>
-              </div>
-
-              <div class="col-4 col-lg-2">
-                <figure class="figure">
-                    <a href="detail-recipe-page.html">
-                        <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1"
-                        alt="..." style="width: 213px">
-                    </a>
-                    <figcaption class="figure-caption recipes-cc">
-                        <p>Isac Kitchen</p>
-                        <h5>British Cake</h5>
-                    </figcaption>
-                    <div class="row size-desc">
-                        <div class="col justify-content-end d-flex time-cook">
-                            <p>12 minutes</p>
-                        </div>
-                    </div>
-                </figure>
-              </div>
-
-              <div class="col-4 col-lg-2">
-                <figure class="figure">
-                    <a href="detail-recipe-page.html">
-                        <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1"
-                        alt="..." style="width: 213px">
-                    </a>
-                    <figcaption class="figure-caption recipes-cc">
-                        <p>Isac Kitchen</p>
-                        <h5>British Cake</h5>
-                    </figcaption>
-                    <div class="row size-desc">
-                        <div class="col justify-content-end d-flex time-cook">
-                            <p>12 minutes</p>
-                        </div>
-                    </div>
-                </figure>
-              </div>
-
-              <div class="col-4 col-lg-2">
-                <figure class="figure">
-                    <a href="detail-recipe-page.html">
-                        <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1"
-                        alt="..." style="width: 213px">
-                    </a>
-                    <figcaption class="figure-caption recipes-cc">
-                        <p>Isac Kitchen</p>
-                        <h5>British Cake</h5>
-                    </figcaption>
-                    <div class="row size-desc">
-                        <div class="col justify-content-end d-flex time-cook">
-                            <p>12 minutes</p>
-                        </div>
-                    </div>
-                </figure>
-              </div>
-            </div>
+          <div class="profile-followers1">
+            8<br>
+            Followers
+          </div>
+          <div class="profile-followers2">
+            3<br>
+            Following
+          </div>
+          <div class="profile-followers3">
+            2001<br>
+            Recipe
           </div>
         </div>
-         
-         <!-- COOKING PLAN -->
-         <section id="cooking-plan">
-            <div class="row content">
-                <div class="col-lg-12">
-                    <p style="font-weight: bold;">Cooking Plan</p>
-                    <hr>
-                </div>
-                  
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <figure class="figure">
-                        <a href="detail-recipe-page.html">
-                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
-                            alt="..." style="width: 110%">
-                        </a>
-                        <figcaption class="figure-caption recipes-cc">
-                            <p>Isac Kitchen</p>
-                            <h5>British Cake</h5>
-                        </figcaption>
-                        <div class="row size-desc">
-                            <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
-                              </div>
-                        </div>
-                    </figure>
-                </div>
-    
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <figure class="figure">
-                        <a href="detail-recipe-page.html">
-                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
-                            alt="..." style="width: 110%">
-                        </a>
-                        <figcaption class="figure-caption recipes-cc">
-                            <p>Isac Kitchen</p>
-                            <h5>British Cake</h5>
-                        </figcaption>
-                        <div class="row size-desc">
-                            <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
-                              </div>
-                        </div>
-                    </figure>
-                </div>
-    
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <figure class="figure">
-                        <a href="detail-recipe-page.html">
-                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
-                            alt="..." style="width: 110%">
-                        </a>
-                        <figcaption class="figure-caption recipes-cc">
-                            <p>Isac Kitchen</p>
-                            <h5>British Cake</h5>
-                        </figcaption>
-                        <div class="row size-desc">
-                            <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
-                              </div>
-                        </div>
-                    </figure>
-                </div>
-    
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <figure class="figure">
-                        <a href="detail-recipe-page.html">
-                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
-                            alt="..." style="width: 110%">
-                        </a>
-                        <figcaption class="figure-caption recipes-cc">
-                            <p>Isac Kitchen</p>
-                            <h5>British Cake</h5>
-                        </figcaption>
-                        <div class="row size-desc">
-                            <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
-                              </div>
-                        </div>
-                    </figure>
-                </div>
-    
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <figure class="figure">
-                        <a href="detail-recipe-page.html">
-                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
-                            alt="..." style="width: 110%">
-                        </a>
-                        <figcaption class="figure-caption recipes-cc">
-                            <p>Isac Kitchen</p>
-                            <h5>British Cake</h5>
-                        </figcaption>
-                        <div class="row size-desc">
-                            <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
-                              </div>
-                        </div>
-                    </figure>
-                </div>
-    
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    <figure class="figure">
-                        <a href="detail-recipe-page.html">
-                            <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1"
-                            alt="..." style="width: 110%">
-                        </a>
-                        <figcaption class="figure-caption recipes-cc">
-                            <p>Isac Kitchen</p>
-                            <h5>British Cake</h5>
-                        </figcaption>
-                        <div class="row size-desc">
-                            <div class="col justify-content-end d-flex time-cook">
-                                <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png" alt="" class="btn-cookplan"></a>
-                                <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png" alt="" class="btn-cookplan" ></a>
-                              </div>
-                        </div>
-                    </figure>
-                </div>  
-             </div>
-         </section>
-         
 
-         <!-- Footer -->
-         <div class="row content">
-           <div class="col-12 ">
-                <footer class="footer border-top p-5 pt-5">
-                    <footer-bar></footer-bar>
-                </footer>
-           </div>
-         </div>
-         
-         <!-- MODALS SIGNOUT -->
-         <div class="modal fade" id="myModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-          
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">SIGNOUT</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-          
-                <!-- Modal body -->
-                <div class="modal-body" style="text-align: center;">
-                    <img src="/src/img/signout.jpeg" alt="" style="width: 100px; height: 100px; margin: auto;">
-                    <br>
-                    <h4>Do you want to SignOut ?</h4>
-                </div>
-          
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <a href="login-page.html"><button type="button" class="btn btn-danger">Yes</button></a>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                </div>
-              </div>
-            </div>
-         </div>
+        <ul>
+          <li class="item"><a href="#dashboard" class="page-scroll">Dashboard</a></li>
+          <li class="item"><a href="#cooking-plan" class="page-scroll">Cooking Plan</a></li>
+          <li class="item"><a href="make-recipe-page.html">Make Recipes</a></li>
+          <li class="item"><a href="settings-page.html">Settings</a></li>
+          <li class="item"><a href="#" data-toggle="modal" data-target="#myModal">Sign Out</a></li>
+        </ul>
+      </div>
 
-          <!-- MODALS KONFIRMASI -->
-          <div class="modal fade" id="check-confirm">
-            <div class="modal-dialog">
-              <div class="modal-content">
-          
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">Cooking Plan</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-          
-                <!-- Modal body -->
-                <div class="modal-body">
-                    Yay, congratulations
-                    You success to cooked this Recipe
-                </div>
-          
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <a href="dashboard-page.html"><button type="button" class="btn btn-success">Yay</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-           <!-- MODALS KONFIRMASI -->
-           <div class="modal fade" id="erase-confirm">
-            <div class="modal-dialog">
-              <div class="modal-content">
-          
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">Cooking Plan</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-          
-                <!-- Modal body -->
-                <div class="modal-body">
-                    You have'nt cook this recipe, Do you realy to erase it ?
-                </div>
-          
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <a href="dashboard-page.html"><button type="button" class="btn btn-danger">Yes</button></a>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
+      <!-- CONTENT -->
+      <button class="open-sidebar"><img src="/src/img/next.png" alt=""></button>
+      <div class="pt-5 row content justify-content-center">
+        <div class="col-6 col-sm-6 col-md-6 mt-5 col-lg-4" style="text-align: center;">
+          <img src="/src/img/ill_chef.png" alt="" width="90%">
         </div>
-    </aside>
+        <div class="col-12 col-sm-12 col-lg-8 desc" style="margin-top: 40px;">
+          <h4 id="test" style="font-weight: bold;">Holla, Chef Virgil Abloh</h4>
+          <p>It's beautifull day right ? I hope.... <br> Let's cook delicious food</p>
+
+          <!-- curently cooking -->
+          <div class="row">
+            <div class="col-12">
+              <p style="color: black !important; font-weight: bold;">YOUR CURRENTLY COOKING</p>
+              <hr>
+            </div>
+            <div class="col-4 col-lg-2">
+              <figure class="figure">
+                <a href="detail-recipe-page.html">
+                  <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1" alt="..."
+                    style="width: 213px">
+                </a>
+                <figcaption class="figure-caption recipes-cc">
+                  <p>Isac Kitchen</p>
+                  <h5>British Cake</h5>
+                </figcaption>
+                <div class="row size-desc">
+                  <div class="col justify-content-end d-flex time-cook">
+                    <p>12 minutes</p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+
+            <div class="col-4 col-lg-2">
+              <figure class="figure">
+                <a href="detail-recipe-page.html">
+                  <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1" alt="..."
+                    style="width: 213px">
+                </a>
+                <figcaption class="figure-caption recipes-cc">
+                  <p>Isac Kitchen</p>
+                  <h5>British Cake</h5>
+                </figcaption>
+                <div class="row size-desc">
+                  <div class="col justify-content-end d-flex time-cook">
+                    <p>12 minutes</p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+
+            <div class="col-4 col-lg-2">
+              <figure class="figure">
+                <a href="detail-recipe-page.html">
+                  <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1" alt="..."
+                    style="width: 213px">
+                </a>
+                <figcaption class="figure-caption recipes-cc">
+                  <p>Isac Kitchen</p>
+                  <h5>British Cake</h5>
+                </figcaption>
+                <div class="row size-desc">
+                  <div class="col justify-content-end d-flex time-cook">
+                    <p>12 minutes</p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+
+            <div class="col-4 col-lg-2">
+              <figure class="figure">
+                <a href="detail-recipe-page.html">
+                  <img src="/src/img/img_burger.png" class="figure-img img-fluid z-depth-1" alt="..."
+                    style="width: 213px">
+                </a>
+                <figcaption class="figure-caption recipes-cc">
+                  <p>Isac Kitchen</p>
+                  <h5>British Cake</h5>
+                </figcaption>
+                <div class="row size-desc">
+                  <div class="col justify-content-end d-flex time-cook">
+                    <p>12 minutes</p>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COOKING PLAN -->
+      <section id="cooking-plan">
+        <div class="row content">
+          <div class="col-lg-12">
+            <p style="font-weight: bold;">Cooking Plan</p>
+            <hr>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <figure class="figure">
+              <a href="detail-recipe-page.html">
+                <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1" alt="..." style="width: 110%">
+              </a>
+              <figcaption class="figure-caption recipes-cc">
+                <p>Isac Kitchen</p>
+                <h5>British Cake</h5>
+              </figcaption>
+              <div class="row size-desc">
+                <div class="col justify-content-end d-flex time-cook">
+                  <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png"
+                      alt="" class="btn-cookplan"></a>
+                  <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png"
+                      alt="" class="btn-cookplan"></a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <figure class="figure">
+              <a href="detail-recipe-page.html">
+                <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1" alt="..." style="width: 110%">
+              </a>
+              <figcaption class="figure-caption recipes-cc">
+                <p>Isac Kitchen</p>
+                <h5>British Cake</h5>
+              </figcaption>
+              <div class="row size-desc">
+                <div class="col justify-content-end d-flex time-cook">
+                  <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png"
+                      alt="" class="btn-cookplan"></a>
+                  <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png"
+                      alt="" class="btn-cookplan"></a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <figure class="figure">
+              <a href="detail-recipe-page.html">
+                <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1" alt="..." style="width: 110%">
+              </a>
+              <figcaption class="figure-caption recipes-cc">
+                <p>Isac Kitchen</p>
+                <h5>British Cake</h5>
+              </figcaption>
+              <div class="row size-desc">
+                <div class="col justify-content-end d-flex time-cook">
+                  <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png"
+                      alt="" class="btn-cookplan"></a>
+                  <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png"
+                      alt="" class="btn-cookplan"></a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <figure class="figure">
+              <a href="detail-recipe-page.html">
+                <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1" alt="..." style="width: 110%">
+              </a>
+              <figcaption class="figure-caption recipes-cc">
+                <p>Isac Kitchen</p>
+                <h5>British Cake</h5>
+              </figcaption>
+              <div class="row size-desc">
+                <div class="col justify-content-end d-flex time-cook">
+                  <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png"
+                      alt="" class="btn-cookplan"></a>
+                  <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png"
+                      alt="" class="btn-cookplan"></a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <figure class="figure">
+              <a href="detail-recipe-page.html">
+                <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1" alt="..." style="width: 110%">
+              </a>
+              <figcaption class="figure-caption recipes-cc">
+                <p>Isac Kitchen</p>
+                <h5>British Cake</h5>
+              </figcaption>
+              <div class="row size-desc">
+                <div class="col justify-content-end d-flex time-cook">
+                  <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png"
+                      alt="" class="btn-cookplan"></a>
+                  <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png"
+                      alt="" class="btn-cookplan"></a>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <figure class="figure">
+              <a href="detail-recipe-page.html">
+                <img src="/src/img/img_steak.png" class="figure-img img-fluid z-depth-1" alt="..." style="width: 110%">
+              </a>
+              <figcaption class="figure-caption recipes-cc">
+                <p>Isac Kitchen</p>
+                <h5>British Cake</h5>
+              </figcaption>
+              <div class="row size-desc">
+                <div class="col justify-content-end d-flex time-cook">
+                  <a id="btn-check" data-toggle="modal" data-target="#check-confirm"><img src="/src/img/checked (1).png"
+                      alt="" class="btn-cookplan"></a>
+                  <a id="btn-cancel" data-toggle="modal" data-target="#erase-confirm"><img src="/src/img/cancel.png"
+                      alt="" class="btn-cookplan"></a>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Footer -->
+      <div class="row content">
+        <div class="col-12 ">
+          <footer class="footer border-top p-5 pt-5">
+            <footer-bar></footer-bar>
+          </footer>
+        </div>
+      </div>
+
+      <!-- MODALS SIGNOUT -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">SIGNOUT</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body" style="text-align: center;">
+              <img src="/src/img/signout.jpeg" alt="" style="width: 100px; height: 100px; margin: auto;">
+              <br>
+              <h4>Do you want to SignOut ?</h4>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <a href="login-page.html"><button type="button" class="btn btn-danger">Yes</button></a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODALS KONFIRMASI -->
+      <div class="modal fade" id="check-confirm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Cooking Plan</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Yay, congratulations
+              You success to cooked this Recipe
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <a href="dashboard-page.html"><button type="button" class="btn btn-success">Yay</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODALS KONFIRMASI -->
+      <div class="modal fade" id="erase-confirm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Cooking Plan</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              You have'nt cook this recipe, Do you realy to erase it ?
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <a href="dashboard-page.html"><button type="button" class="btn btn-danger">Yes</button></a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </aside>
 </body>
+
 </html>

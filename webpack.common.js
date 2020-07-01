@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const path = require("path");
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.(css|png|jpe?g|gif)$/,
+            test: /\.(css|ico|png|jpe?g|gif)$/,
             use: [{
                     loader: "style-loader"
                 },
@@ -21,6 +22,7 @@ module.exports = {
         }]
     },
     plugins: [
+        new FaviconsWebpackPlugin('./src/img/logo.png'),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.html'
