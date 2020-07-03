@@ -2,9 +2,9 @@
   "name": "cookit",
   "version": "1.0.0",
   "description": "Final projek mengenai Pemrograman Web",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "start": "webpack --config webpack.prod.js",
     "start-dev": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
@@ -39,7 +39,6 @@
   "dependencies": {
     "@popperjs/core": "^2.4.2",
     "bootstrap": "^4.5.0",
-    "favicon": "0.0.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "node-static": "^0.7.11",
